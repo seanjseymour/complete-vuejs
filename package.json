@@ -11,7 +11,7 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "1.1.5",
-    "vite": "^2.1.1"
+    "vite": "^2.8.6"
   },
   "peerDependencies": {
     "@vue/compiler-sfc": "^3.0.7"
