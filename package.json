@@ -4,16 +4,13 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "@vue/compiler-sfc": "3.0.7",
-    "vue": "^3.0.7",
+    "@vue/compiler-sfc": "^3.2.31",
+    "vue": "^3",
     "vue-router": "4.0.5",
     "vuex": "4.0.0"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "1.1.5",
+    "@vitejs/plugin-vue": "^2.2.4",
     "vite": "^2.8.6"
-  },
-  "peerDependencies": {
-    "@vue/compiler-sfc": "^3.0.7"
   }
 }
