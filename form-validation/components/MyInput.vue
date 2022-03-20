@@ -43,7 +43,7 @@ export default {
     this.$emit('update', {
         name: this.name.toLowerCase(),
         value: this.value,
-        error: this.validate(this.value),
+        error: this.validate(this.name, this.value),
       });
   },
 
@@ -52,10 +52,10 @@ export default {
       this.$emit('update', {
         name: this.name.toLowerCase(),
         value: $event.target.value,
-        error: this.validate($event.target.value),
+        error: this.validate($event.target.name, $event.target.value),
       });
     },
-    validate(value) {
+    validate(name, value) {
       if (this.rules.required && value.length === 0) {
         return `Required field.`;
       }
