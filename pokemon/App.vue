@@ -14,7 +14,8 @@ import Card from "./Card.vue";
 import PokemonCards from "./PokemonCards.vue";
 
 const api = "https://pokeapi.co/api/v2/pokemon";
-const IDS = [1, 4, 7];
+const min = 1;
+const max = 800;
 
 export default {
   components: {
@@ -31,7 +32,8 @@ export default {
   },
 
   async created() {
-    this.pokemons = await this.fetchData(IDS);
+    const ids = [this.getRandomInt(min, max), this.getRandomInt(min, max), this.getRandomInt(min, max)]
+    this.pokemons = await this.fetchData(ids);
   },
 
   mounted() {},
