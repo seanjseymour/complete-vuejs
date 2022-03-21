@@ -15,13 +15,6 @@
     </div>
 </template>
 
-<script>
-export default {
-props: {
-},
-}
-</script>
-
 <style scoped>
 .card {
   border: 1px solid silver;
